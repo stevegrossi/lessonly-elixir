@@ -1,5 +1,7 @@
 # lessonly
 
+[![Hex pm](https://img.shields.io/hexpm/v/lessonly.svg)](https://hex.pm/packages/lessonly)
+
 An Elixir-flavored wrapper for the [Lesson.ly](http://www.lesson.ly) [API](http://docs.lesson.ly/).
 
 ## Installation
