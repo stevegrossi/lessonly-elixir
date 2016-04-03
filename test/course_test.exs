@@ -63,4 +63,72 @@ defmodule CourseTest do
       }
     end
   end
+
+  test "assignments" do
+    use_cassette "course.assignments" do
+      response = client |> Lessonly.Course.assignments(3467)
+
+      assert response == %{
+        "assignments" => [
+          %{
+            "assignable_id" => 3467,
+            "assignable_type" => "Course",
+            "assignee_id" => 544547,
+            "completed_at" => nil,
+            "due_by" => "2020-03-01T00:00:00Z",
+            "ext_uid" => nil,
+            "id" => 941036,
+            "reassigned_at" => nil,
+            "resource_type" => "assignment",
+            "score" => 0,
+            "started_at" => nil,
+            "status" => "Incomplete",
+            "updated_at" => nil
+          }
+        ],
+        "page" => 1,
+        "per_page" => 50,
+        "total_assignments" => 1,
+        "total_pages" => 1,
+        "type" => "course_assignments"
+      }
+    end
+  end
+
+  test "assign" do
+    use_cassette "course.assign" do
+      response = client |> Lessonly.Course.assign(
+        3467,
+        %{
+          "assignments" => [
+            %{
+              "assignee_id" => 544547,
+              "due_by" => "2020-03-01"
+            }
+          ]
+        }
+      )
+
+      assert response == %{
+        "assignments" => [
+          %{
+            "assignable_id" => 3467,
+            "assignable_type" => "Course",
+            "assignee_id" => 544547,
+            "completed_at" => nil,
+            "due_by" => "2020-03-01T00:00:00Z",
+            "ext_uid" => nil,
+            "id" => 941036,
+            "reassigned_at" => nil,
+            "resource_type" => "assignment",
+            "score" => 0,
+            "started_at" => nil,
+            "status" => "Incomplete",
+            "updated_at" => nil
+          }
+        ],
+       "type" => "update_course_assignments"
+      }
+    end
+  end
 end
