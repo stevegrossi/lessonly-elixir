@@ -26,4 +26,36 @@ defmodule GroupTest do
       }
     end
   end
+
+  test "create" do
+    use_cassette "group.create" do
+      response = client |> Lessonly.Group.create(%{
+        "name" => "Test Group 3"
+      })
+
+      assert response == %{
+        "id" => 9541,
+        "managers" => [],
+        "members" => [],
+        "name" => "Test Group 3",
+        "resource_type" => "group",
+        "type" => "create_group"
+      }
+    end
+  end
+
+  test "update" do
+    use_cassette "group.update" do
+      response = client |> Lessonly.Group.update(9541, %{"name" => "Testy Group 3"})
+
+      assert response == %{
+        "id" => 9541,
+        "managers" => [],
+        "members" => [],
+        "name" => "Testy Group 3",
+        "resource_type" => "group",
+        "type" => "update_group"
+      }
+    end
+  end
 end
