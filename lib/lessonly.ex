@@ -9,26 +9,26 @@ defmodule Lessonly do
   end
 
   def get(client, endpoint) do
-    get!(construct_url(endpoint, client), headers(client))
+    get!(url(endpoint, client), headers(client))
     |> decode_response
   end
 
   def post(client, endpoint, data) do
-    post!(construct_url(endpoint, client), data, headers(client))
+    post!(url(endpoint, client), data, headers(client))
     |> decode_response
   end
 
   def put(client, endpoint, data) do
-    put!(construct_url(endpoint, client), data, headers(client))
+    put!(url(endpoint, client), data, headers(client))
     |> decode_response
   end
 
   def delete(client, endpoint) do
-    delete!(construct_url(endpoint, client), headers(client))
+    delete!(url(endpoint, client), headers(client))
     |> decode_response
   end
 
-  defp construct_url(endpoint, client) do
+  defp url(endpoint, client) do
     client.base_url <> endpoint
   end
 
