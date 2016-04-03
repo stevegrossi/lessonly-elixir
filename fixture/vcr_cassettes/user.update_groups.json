@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "{\"memberships\":[{\"id\":9540}]}",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Content-Type": "application/json",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "put",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/users/544547/groups"
+    },
+    "response": {
+      "body": "{\"type\":\"update_user_groups\",\"memberships\":[{\"id\":9540,\"name\":\"Test Group 2\"},{\"id\":9539,\"name\":\"Test Group 1\"}],\"managing\":[]}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"fe5831687c7b513aa545a7c96128f7aa\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "4121249e-7ebb-4da1-bc9b-dacff696d72f",
+        "X-Runtime": "0.193219",
+        "Vary": "Origin",
+        "Content-Length": "127"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

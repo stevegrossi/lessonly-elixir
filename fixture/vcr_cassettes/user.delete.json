@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Content-Type": "application/json",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/users/544551"
+    },
+    "response": {
+      "body": "{\"type\":\"delete_user\",\"id\":544551}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"8988acb0d03438975e0abfa4937973d0\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "64dd3a02-73fb-4aba-9e11-917614ceb136",
+        "X-Runtime": "0.385624",
+        "Vary": "Origin",
+        "Content-Length": "34"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

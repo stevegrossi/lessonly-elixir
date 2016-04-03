@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "{\"role\":\"creator\"}",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Content-Type": "application/json",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "put",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/users/544551"
+    },
+    "response": {
+      "body": "{\"type\":\"update_user\",\"id\":544551,\"resource_type\":\"user\",\"ext_uid\":null,\"email\":\"test5@lesson.ly\",\"name\":\"Test User 5\",\"role\":\"creator\",\"custom_user_field_data\":[]}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"69eda3004307c3f5439f66ac79e60a48\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "0534e0df-4083-4165-bc4a-dbbea9ae79c7",
+        "X-Runtime": "0.202503",
+        "Vary": "Origin",
+        "Content-Length": "164"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -28,4 +28,89 @@ defmodule UserTest do
       }
     end
   end
+
+  test "create" do
+    use_cassette "user.create" do
+      response = client |> Lessonly.User.create(%{
+        "name" => "Test User 5",
+        "email" => "test5@lesson.ly",
+        "role" => "learner"
+      })
+
+      assert response == %{
+        "custom_user_field_data" => [],
+        "email" => "test5@lesson.ly",
+        "ext_uid" => nil,
+        "id" => 544551,
+        "name" => "Test User 5",
+        "resource_type" => "user",
+        "role" => "learner",
+        "type" => "create_user"
+      }
+    end
+  end
+
+  test "update" do
+    use_cassette "user.update" do
+      response = client |> Lessonly.User.update(544551, %{"role" => "creator"})
+
+      assert response == %{
+        "custom_user_field_data" => [],
+        "email" => "test5@lesson.ly",
+        "ext_uid" => nil,
+        "id" => 544551,
+        "name" => "Test User 5",
+        "resource_type" => "user",
+        "role" => "creator",
+        "type" => "update_user"
+      }
+    end
+  end
+
+  test "delete" do
+    use_cassette "user.delete" do
+      response = client |> Lessonly.User.delete(544551)
+
+      assert response == %{
+        "id" => 544551,
+        "type" => "delete_user"
+      }
+    end
+  end
+
+  test "groups" do
+    use_cassette "user.groups" do
+      response = client |> Lessonly.User.groups(544547)
+
+      assert response == %{
+        "managing" => [],
+        "memberships" => [
+          %{"id" => 9539, "name" => "Test Group 1"}
+        ],
+       "type" => "user_groups"
+      }
+    end
+  end
+
+  test "update_groups" do
+    use_cassette "user.update_groups" do
+      response = client |> Lessonly.User.update_groups(
+        544547,
+        %{
+          "memberships" => [
+            %{"id" => 9540}
+          ]
+        }
+      )
+
+      assert response == %{
+        "managing" => [],
+        "memberships" => [
+          %{"id" => 9540, "name" => "Test Group 2"},
+          %{"id" => 9539, "name" => "Test Group 1"}
+        ],
+       "type" => "update_user_groups"
+      }
+    end
+  end
 end

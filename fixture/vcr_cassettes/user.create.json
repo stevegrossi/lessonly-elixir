@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "{\"role\":\"learner\",\"name\":\"Test User 5\",\"email\":\"test5@lesson.ly\"}",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Content-Type": "application/json",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/users"
+    },
+    "response": {
+      "body": "{\"type\":\"create_user\",\"id\":544551,\"resource_type\":\"user\",\"ext_uid\":null,\"email\":\"test5@lesson.ly\",\"name\":\"Test User 5\",\"role\":\"learner\",\"custom_user_field_data\":[]}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"ab0445a657111746c93d4c2e8efe305b\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "0e594d92-5796-4759-9ce4-3a22319e4dde",
+        "X-Runtime": "0.259999",
+        "Vary": "Origin",
+        "Content-Length": "164"
+      },
+      "status_code": 201,
+      "type": "ok"
+    }
+  }
+]
