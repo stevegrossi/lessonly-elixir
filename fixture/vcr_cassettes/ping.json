@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/ping"
+    },
+    "response": {
+      "body": "{\"response\":\"pong\"}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"8dac7f327a7ab2b3562ccec58b4889a4\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "6c1a862a-7ad7-442d-8ef6-3757e85c1978",
+        "X-Runtime": "0.079445",
+        "Vary": "Origin",
+        "Content-Length": "19"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

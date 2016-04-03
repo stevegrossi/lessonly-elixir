@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/users/544547"
+    },
+    "response": {
+      "body": "{\"type\":\"user\",\"id\":544547,\"resource_type\":\"user\",\"ext_uid\":null,\"email\":\"test1@lesson.ly\",\"name\":\"Test User 1\",\"role\":\"admin\",\"custom_user_field_data\":[]}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"bf9e378eac40f616c9890b94e8e0fe20\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "63fa254e-5807-44ac-9e45-163bc4c68bad",
+        "X-Runtime": "0.148675",
+        "Vary": "Origin",
+        "Content-Length": "155"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

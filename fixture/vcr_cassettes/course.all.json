@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/courses"
+    },
+    "response": {
+      "body": "{\"type\":\"courses\",\"courses\":[{\"id\":3466,\"title\":\"Test Course 1\"},{\"id\":3467,\"title\":\"Test Course 2\"}]}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"2a8213ddb00bcb5ed45cc2f571bfb38d\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "162d4bea-2629-4818-9682-6acf7d64d9a9",
+        "X-Runtime": "0.120583",
+        "Vary": "Origin",
+        "Content-Length": "102"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/lessons"
+    },
+    "response": {
+      "body": "{\"type\":\"lessons\",\"lessons\":[{\"id\":29414,\"title\":\"Test Lesson 1\"},{\"id\":29415,\"title\":\"Test Lesson 2\"}]}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"73d42c66dd5d6acc819c269acb666920\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "e9b89e76-3d82-4fdf-8165-5a2035a74f5f",
+        "X-Runtime": "0.147826",
+        "Vary": "Origin",
+        "Content-Length": "104"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

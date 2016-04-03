@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/groups/9539"
+    },
+    "response": {
+      "body": "{\"type\":\"group\",\"resource_type\":\"group\",\"id\":9539,\"name\":\"Test Group 1\",\"members\":[{\"id\":544547,\"resource_type\":\"user\",\"ext_uid\":null,\"email\":\"test1@lesson.ly\",\"name\":\"Test User 1\",\"role\":\"admin\"}],\"managers\":[]}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"7807136502471c7420235f77208a0cb0\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "c617f7c7-880d-4c4c-b10d-6d7426463264",
+        "X-Runtime": "0.123084",
+        "Vary": "Origin",
+        "Content-Length": "212"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

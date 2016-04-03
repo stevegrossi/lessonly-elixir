@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/users"
+    },
+    "response": {
+      "body": "{\"type\":\"users\",\"users\":[{\"id\":544550,\"resource_type\":\"user\",\"ext_uid\":null,\"email\":\"test4@lesson.ly\",\"name\":\"Test User 4\",\"role\":\"learner\"},{\"id\":544549,\"resource_type\":\"user\",\"ext_uid\":null,\"email\":\"test3@lesson.ly\",\"name\":\"Test User 3\",\"role\":\"creator\"},{\"id\":544548,\"resource_type\":\"user\",\"ext_uid\":null,\"email\":\"test2@lesson.ly\",\"name\":\"Test User 2\",\"role\":\"manager\"},{\"id\":544547,\"resource_type\":\"user\",\"ext_uid\":null,\"email\":\"test1@lesson.ly\",\"name\":\"Test User 1\",\"role\":\"admin\"}],\"total_users\":4,\"total_pages\":1,\"page\":1,\"per_page\":50}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"b5e2a64f6cd2ca3af70d132433b5bae8\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "32d03b19-30dd-4340-8748-f732957c252e",
+        "X-Runtime": "0.125421",
+        "Vary": "Origin",
+        "Content-Length": "543"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
