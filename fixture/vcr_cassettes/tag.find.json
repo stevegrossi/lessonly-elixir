@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/tags/20367"
+    },
+    "response": {
+      "body": "{\"type\":\"tag\",\"id\":20367,\"resource_type\":\"tag\",\"name\":\"HR\"}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"f2cd6dafb38fc6930380aaff41b47dfa\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "c67a50e5-39b3-43a5-9120-65966da3df31",
+        "X-Runtime": "0.083490",
+        "Vary": "Origin",
+        "Content-Length": "59"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

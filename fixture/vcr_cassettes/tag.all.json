@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/tags"
+    },
+    "response": {
+      "body": "{\"type\":\"tags\",\"tags\":[{\"id\":20365,\"resource_type\":\"tag\",\"name\":\"Customer Support\"},{\"id\":20366,\"resource_type\":\"tag\",\"name\":\"Draft\"},{\"id\":20367,\"resource_type\":\"tag\",\"name\":\"HR\"},{\"id\":20368,\"resource_type\":\"tag\",\"name\":\"Marketing\"},{\"id\":20369,\"resource_type\":\"tag\",\"name\":\"Sales\"}]}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"8e4a1ba7dd5621c1352ceefd50f3955a\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "28bf12a0-38b1-4193-996a-5f163586de1a",
+        "X-Runtime": "0.097928",
+        "Vary": "Origin",
+        "Content-Length": "286"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
