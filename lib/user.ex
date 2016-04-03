@@ -28,4 +28,12 @@ defmodule Lessonly.User do
   def update_groups(client, id, attributes) do
     Lessonly.put(client, "/users/#{id}/groups", attributes).body
   end
+
+  def assignments(client, id) do
+    Lessonly.get(client, "/users/#{id}/assignments").body
+  end
+
+  def assign(client, id, assignments) do
+    Lessonly.post(client, "/users/#{id}/assignments", assignments).body
+  end
 end

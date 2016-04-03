@@ -113,4 +113,69 @@ defmodule UserTest do
       }
     end
   end
+
+  test "assignments" do
+    use_cassette "user.assignments" do
+      response = client |> Lessonly.User.assignments(544547)
+
+      assert response == %{
+        "assignments" => [
+          %{
+            "assignable_id" => 29415,
+            "assignable_type" => "Lesson",
+            "assignee_id" => 544547,
+            "completed_at" => nil,
+            "due_by" => "2020-12-31T00:00:00Z",
+            "ext_uid" => nil,
+            "id" => 941035,
+            "reassigned_at" => nil,
+            "resource_type" => "assignment",
+            "score" => 0,
+            "started_at" => nil,
+            "status" => "Incomplete",
+            "updated_at" => "2016-04-03T14:55:00Z"
+          }
+        ],
+        "type" => "user_assignments"
+      }
+    end
+  end
+
+  test "assign" do
+    use_cassette "user.assign" do
+      response = client |> Lessonly.User.assign(
+        544547,
+        %{
+          "assignments" => [
+            %{
+              "assignable_id" => 29415,
+              "assignable_type" => "Lesson",
+              "due_by" => "2020-12-31"
+            }
+          ]
+        }
+      )
+
+      assert response == %{
+        "assignments" => [
+          %{
+            "assignable_id" => 29415,
+            "assignable_type" => "Lesson",
+            "assignee_id" => 544547,
+            "completed_at" => nil,
+            "due_by" => "2020-12-31T00:00:00Z",
+            "ext_uid" => nil,
+            "id" => 941035,
+            "reassigned_at" => nil,
+            "resource_type" => "assignment",
+            "score" => 0,
+            "started_at" => nil,
+            "status" => "Incomplete",
+            "updated_at" => "2016-04-03T14:55:00Z"
+          }
+        ],
+        "type" => "create_user_assignments"
+      }
+    end
+  end
 end

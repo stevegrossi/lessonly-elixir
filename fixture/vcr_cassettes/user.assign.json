@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "{\"assignments\":[{\"due_by\":\"2020-12-31\",\"assignable_type\":\"Lesson\",\"assignable_id\":29415}]}",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Content-Type": "application/json",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/users/544547/assignments"
+    },
+    "response": {
+      "body": "{\"type\":\"create_user_assignments\",\"assignments\":[{\"id\":941035,\"resource_type\":\"assignment\",\"assignee_id\":544547,\"assignable_type\":\"Lesson\",\"assignable_id\":29415,\"ext_uid\":null,\"due_by\":\"2020-12-31T00:00:00Z\",\"reassigned_at\":null,\"status\":\"Incomplete\",\"score\":0,\"started_at\":null,\"completed_at\":null,\"updated_at\":\"2016-04-03T14:55:00Z\"}]}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"4738ebd2d351481e1907e90cc05e2caf\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "589b13f5-8a0a-46f7-ba8c-b1fd4a1b00f2",
+        "X-Runtime": "0.555754",
+        "Vary": "Origin",
+        "Content-Length": "337"
+      },
+      "status_code": 201,
+      "type": "ok"
+    }
+  }
+]
