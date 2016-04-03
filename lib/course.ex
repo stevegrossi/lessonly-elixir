@@ -1,5 +1,4 @@
 defmodule Lessonly.Course do
-  use HTTPoison.Base
 
   def all(client) do
     Lessonly.get(client, "/courses").body["courses"]

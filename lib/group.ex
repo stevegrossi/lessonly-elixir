@@ -1,5 +1,4 @@
 defmodule Lessonly.Group do
-  use HTTPoison.Base
 
   def all(client) do
     Lessonly.get(client, "/groups").body["groups"]
