@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "{\"title\":\"Testy Lesson 2\"}",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Content-Type": "application/json",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "put",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/lessons/29415"
+    },
+    "response": {
+      "body": "{\"type\":\"update_lesson\",\"id\":29415,\"resource_type\":\"lesson\",\"title\":\"Testy Lesson 2\",\"assignees_count\":1,\"completed_count\":0,\"retake_score\":0,\"description\":null,\"public\":false,\"created_at\":\"2016-04-03T12:27:02Z\",\"last_updated_at\":\"2016-04-03T15:45:52Z\",\"tags\":[],\"links\":{\"shareable\":\"http://test.lessonly.localhost:3000/lesson/29415-testy-lesson-2\"}}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"e10233fa1b1331c295cde31c1507abe6\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "6dce3a3f-8481-484e-b4a2-365e1a5ba98c",
+        "X-Runtime": "0.155797",
+        "Vary": "Origin",
+        "Content-Length": "351"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

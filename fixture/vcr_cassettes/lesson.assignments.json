@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "\"\"",
+      "headers": {
+        "User-agent": "lessonly-elixir",
+        "Content-Type": "application/json",
+        "Authorization": "Basic dGVzdDp0NXROcWF5a1Z3TjNIazFWWFhOTE9LRzZzblRNblU4VQ=="
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "http://api.lvh.me:3000/api/v1/lessons/29415/assignments"
+    },
+    "response": {
+      "body": "{\"type\":\"lesson_assignments\",\"assignments\":[{\"id\":941035,\"resource_type\":\"assignment\",\"assignee_id\":544547,\"assignable_type\":\"Lesson\",\"assignable_id\":29415,\"ext_uid\":null,\"due_by\":\"2020-12-31T00:00:00Z\",\"reassigned_at\":null,\"status\":\"Incomplete\",\"score\":0,\"started_at\":null,\"completed_at\":null,\"updated_at\":\"2016-04-03T14:55:00Z\"}],\"total_assignments\":1,\"total_pages\":1,\"page\":1,\"per_page\":50}",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": "W/\"50b7425029e1b93c799898ccc73deac8\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Meta-Request-Version": "0.3.4",
+        "X-Request-Id": "1ee84d1e-c885-4810-9aff-a54032b9b8c1",
+        "X-Runtime": "0.132219",
+        "Vary": "Origin",
+        "Content-Length": "393"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
