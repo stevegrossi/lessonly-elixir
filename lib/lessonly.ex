@@ -1,9 +1,25 @@
 defmodule Lessonly do
+  @moduledoc """
+  The base Lessonly module, responsible for executing HTTP requests.
+  """
+
   use HTTPoison.Base
 
   @user_agent {"User-agent", "lessonly-elixir"}
   @content_type {"Content-Type", "application/json"}
 
+  @doc """
+  Checks if the API is available.
+
+  Returns `"pong"`.
+
+  ## Examples
+
+      > client = Lessonly.Client.new(my_subdomain, my_api_key)
+      > Lessonly.ping(client)
+      "pong"
+
+  """
   def ping(client) do
     get(client, "/ping")["response"]
   end
