@@ -1,10 +1,11 @@
 defmodule Lessonly.Tag do
+  alias Lessonly.Client
 
   def all(client) do
-    Lessonly.get(client, "/tags")["tags"]
+    Client.get(client, "/tags")["tags"]
   end
 
   def find(client, id) do
-    Lessonly.get(client, "/tags/#{id}")
+    Client.get(client, "/tags/#{id}")
   end
 end

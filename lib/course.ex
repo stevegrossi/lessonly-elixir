@@ -1,18 +1,19 @@
 defmodule Lessonly.Course do
+  alias Lessonly.Client
 
   def all(client) do
-    Lessonly.get(client, "/courses")["courses"]
+    Client.get(client, "/courses")["courses"]
   end
 
   def find(client, id) do
-    Lessonly.get(client, "/courses/#{id}")
+    Client.get(client, "/courses/#{id}")
   end
 
   def assignments(client, id) do
-    Lessonly.get(client, "/courses/#{id}/assignments")
+    Client.get(client, "/courses/#{id}/assignments")
   end
 
   def assign(client, id, assignments) do
-    Lessonly.post(client, "/courses/#{id}/assignments", assignments)
+    Client.post(client, "/courses/#{id}/assignments", assignments)
   end
 end

@@ -32,7 +32,8 @@ defmodule Lessonly.Mixfile do
     [
       {:httpoison, "~> 0.8.0"},
       {:poison, "~> 2.0"},
-      {:exvcr, "~> 0.7", only: :test}
+      {:exvcr, "~> 0.7", only: :test},
+      {:mix_test_watch, "~> 0.2", only: :dev}
     ]
   end
 end

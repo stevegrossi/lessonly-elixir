@@ -1,18 +1,19 @@
 defmodule Lessonly.Group do
+  alias Lessonly.Client
 
   def all(client) do
-    Lessonly.get(client, "/groups")["groups"]
+    Client.get(client, "/groups")["groups"]
   end
 
   def find(client, id) do
-    Lessonly.get(client, "/groups/#{id}")
+    Client.get(client, "/groups/#{id}")
   end
 
   def create(client, attributes) do
-    Lessonly.post(client, "/groups", attributes)
+    Client.post(client, "/groups", attributes)
   end
 
   def update(client, id, attributes) do
-    Lessonly.put(client, "/groups/#{id}", attributes)
+    Client.put(client, "/groups/#{id}", attributes)
   end
 end
