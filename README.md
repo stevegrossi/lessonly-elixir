@@ -2,7 +2,7 @@
 
 [![Hex pm](https://img.shields.io/hexpm/v/lessonly.svg)](https://hex.pm/packages/lessonly)
 
-An Elixir-flavored wrapper for the [Lesson.ly](http://www.lesson.ly) [API](http://docs.lesson.ly/).
+An Elixir-flavored wrapper for the [Lessonly](http://www.lessonly.com) [API](http://docs.lessonly.com/).
 
 ## Installation
 
@@ -30,7 +30,7 @@ iex> client |> Lessonly.User.find(544547)
 
     %{
       "custom_user_field_data" => [],
-      "email" => "test1@lesson.ly",
+      "email" => "test1@lessonly.com",
       "ext_uid" => nil,
       "id" => 544547,
       "name" => "Test User 1",
