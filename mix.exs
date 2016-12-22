@@ -12,7 +12,7 @@ defmodule Lessonly.Mixfile do
 
   defp description do
     """
-    An Elixir wrapper for the Lesson.ly API.
+    An Elixir wrapper for the Lessonly API.
     """
   end
 
